@@ -15,11 +15,13 @@ class Character {
         if (["Swordsman", "Zombie"].includes(type)) {
             this.attack = 40;
             this.defence = 10;
+
             return;
         };
         if (["Magician", "Daemon"].includes(type)) {
             this.attack = 10;
             this.defence = 40;
+
             return;
         };
 

@@ -15,7 +15,8 @@ export default [
   },
   {
     ignores: [
-      'dist'
+      'dist',
+      'coverage'
     ]
   }
 ];

@@ -4,15 +4,19 @@ import { Bowman, Swordsman, Magician, Daemon, Undead, Zombie } from "../characte
 test('If name incorrect', () => {
     function throwError() {
         const result = new Character('A', 'Bowman');
+
         return result;
     };
+
     expect(throwError).toThrow(Error);
 });
 test('If type incorrect', () => {
     function throwError() {
         const result = new Character('Alexey', 'Bowma');
+
         return result;
     };
+
     expect(throwError).toThrow(Error);
 });
 
@@ -26,6 +30,7 @@ test('Test bowman class', () => {
         attack: 25,
         defence: 25
     };
+
     expect(result).toEqual(hero);
 });
 
@@ -39,6 +44,7 @@ test('Test swordsman class', () => {
         attack: 40,
         defence: 10
     };
+
     expect(result).toEqual(hero);
 });
 
@@ -52,6 +58,7 @@ test('Test magician class', () => {
         attack: 10,
         defence: 40
     };
+
     expect(result).toEqual(hero);
 });
 
@@ -65,6 +72,7 @@ test('Test daemon class', () => {
         attack: 10,
         defence: 40
     };
+
     expect(result).toEqual(hero);
 });
 
@@ -78,6 +86,7 @@ test('Test undead class', () => {
         attack: 25,
         defence: 25
     };
+
     expect(result).toEqual(hero);
 });
 
@@ -90,6 +99,7 @@ test('Test zombie class', () => {
         level: 1,
         attack: 40,
         defence: 10
-    };
+    } ;
+    
     expect(result).toEqual(hero);
 });
